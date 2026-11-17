@@ -34,7 +34,7 @@ export default defineConfig({
         ...devices["Desktop Chrome"],
         viewport: null, // Desktop Chrome sets a fixed viewport; null lets the window size apply
         deviceScaleFactor: undefined, // Not allowed together with viewport: null
-        launchOptions: { args: ["--start-maximized"] }, // Maximize the browser
+        launchOptions: { args: ["--start-maximized", ...(process.env.CI ? ["--window-size=1920,1080"] : [])] }, // Maximize the browser (CI has no window manager, so set the size)
       },
     },
     /*
