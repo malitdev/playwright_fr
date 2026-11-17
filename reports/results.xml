@@ -1,6 +1,335 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.776571">
-<testsuite name="web\end-to-end-shopping.spec.ts" timestamp="2026-11-15T18:30:34.175Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.109" errors="0">
-<testcase name="End-to-end shopping flow test @master @regression @web @e2e" classname="web\end-to-end-shopping.spec.ts" time="6.109">
+<testsuites id="" name="" tests="49" failures="4" skipped="0" errors="0" time="33.4979">
+<testsuite name="api\auth.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.953" errors="0">
+<testcase name="Authentication API Tests › POST - Successful Login @master @sanity @api" classname="api\auth.spec.ts" time="0.971">
+</testcase>
+<testcase name="Authentication API Tests › POST - Invalid Login @master @regression @api" classname="api\auth.spec.ts" time="0.982">
+</testcase>
+</testsuite>
+<testsuite name="api\carts.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="10" failures="0" skipped="0" time="5.378" errors="0">
+<testcase name="Carts API Tests › GET - All Carts @master @sanity @api" classname="api\carts.spec.ts" time="0.929">
+</testcase>
+<testcase name="Carts API Tests › GET - Cart by ID @master @sanity @api" classname="api\carts.spec.ts" time="0.918">
+</testcase>
+<testcase name="Carts API Tests › GET - Carts by Date Range @master @regression @api" classname="api\carts.spec.ts" time="0.325">
+</testcase>
+<testcase name="Carts API Tests › GET - User Cart @master @regression @api" classname="api\carts.spec.ts" time="0.321">
+</testcase>
+<testcase name="Carts API Tests › GET - Carts with Limit @master @regression @api" classname="api\carts.spec.ts" time="0.874">
+</testcase>
+<testcase name="Carts API Tests › GET - Carts Sorted Ascending @master @regression @api" classname="api\carts.spec.ts" time="0.319">
+</testcase>
+<testcase name="Carts API Tests › GET - Carts Sorted Descending @master @regression @api" classname="api\carts.spec.ts" time="0.856">
+</testcase>
+<testcase name="Carts API Tests › POST - Create Cart @master @regression @api" classname="api\carts.spec.ts" time="0.218">
+</testcase>
+<testcase name="Carts API Tests › PUT - Update Cart @master @regression @api" classname="api\carts.spec.ts" time="0.294">
+</testcase>
+<testcase name="Carts API Tests › DELETE - Delete Cart @master @regression @api" classname="api\carts.spec.ts" time="0.324">
+</testcase>
+</testsuite>
+<testsuite name="api\crud-workflows.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.376" errors="0">
+<testcase name="CRUD Workflow API Tests › Product CRUD Workflow @master @regression @api" classname="api\crud-workflows.spec.ts" time="0.786">
+<properties>
+<property name="serial" value="">
+</property>
+</properties>
+</testcase>
+<testcase name="CRUD Workflow API Tests › User CRUD Workflow @master @regression @api" classname="api\crud-workflows.spec.ts" time="0.868">
+<properties>
+<property name="serial" value="">
+</property>
+</properties>
+</testcase>
+<testcase name="CRUD Workflow API Tests › Cart CRUD Workflow @master @regression @api" classname="api\crud-workflows.spec.ts" time="0.722">
+<properties>
+<property name="serial" value="">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="api\products.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="10" failures="0" skipped="0" time="2.392" errors="0">
+<testcase name="Products API Tests › GET - All Products @master @sanity @api" classname="api\products.spec.ts" time="0.284">
+</testcase>
+<testcase name="Products API Tests › GET - Product by ID @master @sanity @api" classname="api\products.spec.ts" time="0.371">
+</testcase>
+<testcase name="Products API Tests › GET - Products with Limit @master @regression @api" classname="api\products.spec.ts" time="0.22">
+</testcase>
+<testcase name="Products API Tests › GET - Products Sorted Ascending @master @regression @api" classname="api\products.spec.ts" time="0.21">
+</testcase>
+<testcase name="Products API Tests › GET - Products Sorted Descending @master @regression @api" classname="api\products.spec.ts" time="0.219">
+</testcase>
+<testcase name="Products API Tests › GET - All Categories @master @sanity @api" classname="api\products.spec.ts" time="0.236">
+</testcase>
+<testcase name="Products API Tests › GET - Products by Category @master @regression @api" classname="api\products.spec.ts" time="0.216">
+</testcase>
+<testcase name="Products API Tests › POST - Create Product @master @regression @api" classname="api\products.spec.ts" time="0.218">
+</testcase>
+<testcase name="Products API Tests › PUT - Update Product @master @regression @api" classname="api\products.spec.ts" time="0.211">
+</testcase>
+<testcase name="Products API Tests › DELETE - Delete Product @master @regression @api" classname="api\products.spec.ts" time="0.207">
+</testcase>
+</testsuite>
+<testsuite name="api\schema-validation.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.03" errors="0">
+<testcase name="Schema Validation API Tests › Product Response Schema @master @regression @api" classname="api\schema-validation.spec.ts" time="0.293">
+</testcase>
+<testcase name="Schema Validation API Tests › User Response Schema @master @regression @api" classname="api\schema-validation.spec.ts" time="0.376">
+</testcase>
+<testcase name="Schema Validation API Tests › Cart Response Schema @master @regression @api" classname="api\schema-validation.spec.ts" time="0.361">
+</testcase>
+</testsuite>
+<testsuite name="api\users.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="8" failures="0" skipped="0" time="2.614" errors="0">
+<testcase name="Users API Tests › GET - All Users @master @sanity @api" classname="api\users.spec.ts" time="0.338">
+</testcase>
+<testcase name="Users API Tests › GET - User by ID @master @sanity @api" classname="api\users.spec.ts" time="0.315">
+</testcase>
+<testcase name="Users API Tests › GET - Users with Limit @master @regression @api" classname="api\users.spec.ts" time="0.325">
+</testcase>
+<testcase name="Users API Tests › GET - Users Sorted Ascending @master @regression @api" classname="api\users.spec.ts" time="0.328">
+</testcase>
+<testcase name="Users API Tests › GET - Users Sorted Descending @master @regression @api" classname="api\users.spec.ts" time="0.348">
+</testcase>
+<testcase name="Users API Tests › POST - Create User @master @regression @api" classname="api\users.spec.ts" time="0.406">
+</testcase>
+<testcase name="Users API Tests › PUT - Update User @master @regression @api" classname="api\users.spec.ts" time="0.245">
+</testcase>
+<testcase name="Users API Tests › DELETE - Delete User @master @regression @api" classname="api\users.spec.ts" time="0.309">
+</testcase>
+</testsuite>
+<testsuite name="db\customer-registration.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="1" failures="1" skipped="0" time="9.892" errors="0">
+<testcase name="Customer registration UI, Admin and DB validation test @master @regression @db" classname="db\customer-registration.spec.ts" time="9.892">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\db-customer-registration-C-d9023-n-test-master-regression-db-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\db-customer-registration-C-d9023-n-test-master-regression-db-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\db-customer-registration-C-d9023-n-test-master-regression-db-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="Admin should list exactly one customer for 1794923966252.madaline2@gmail.com" type="expect.toBe">
+<![CDATA[  [chromium] › db\customer-registration.spec.ts:20:1 › Customer registration UI, Admin and DB validation test @master @regression @db › 2) Verify the customer in the Admin Portal 
+
+    Error: Admin should list exactly one customer for 1794923966252.madaline2@gmail.com
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 4
+
+      49 |             const customersPage = await dashboardPage.openCustomers();
+      50 |             await customersPage.searchByEmail(email);
+    > 51 |             expect(await customersPage.getCustomerRowCount(), `Admin should list exactly one customer for ${email}`).toBe(1);
+         |                                                                                                                      ^
+      52 |
+      53 |             const customerPage = await customersPage.clickEditFirstCustomer();
+      54 |             expect(await customerPage.getFirstName(), 'Admin first name should match').toBe(firstName);
+        at C:\src\playwright_fr\tests\db\customer-registration.spec.ts:51:118
+        at C:\src\playwright_fr\tests\db\customer-registration.spec.ts:44:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\db-customer-registration-C-d9023-n-test-master-regression-db-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\db-customer-registration-C-d9023-n-test-master-regression-db-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\db-customer-registration-C-d9023-n-test-master-regression-db-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="web\add-to-cart.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.753" errors="0">
+<testcase name="Add product to cart test @master @sanity @regression @web" classname="web\add-to-cart.spec.ts" time="6.753">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web\end-to-end-shopping.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="1" failures="1" skipped="0" time="21.13" errors="0">
+<testcase name="End-to-end shopping flow test @master @regression @web @e2e" classname="web\end-to-end-shopping.spec.ts" time="21.13">
+<system-out>
+<![CDATA[Error checking My Account page: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('heading', { name: 'My Account', exact: true, level: 1 }) to be visible[22m
+
+
+[[ATTACHMENT|..\test-results\web-end-to-end-shopping-En-9630a-t-master-regression-web-e2e-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\web-end-to-end-shopping-En-9630a-t-master-regression-web-e2e-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\web-end-to-end-shopping-En-9630a-t-master-regression-web-e2e-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="Login with the new account should succeed" type="expect.toBeTruthy">
+<![CDATA[  [chromium] › web\end-to-end-shopping.spec.ts:18:1 › End-to-end shopping flow test @master @regression @web @e2e › 3) Login with the new credentials 
+
+    Error: Login with the new account should succeed
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      42 |         const loginPage = await homePage.clickLogin();
+      43 |         const myAccountPage = await loginPage.login(email, password);
+    > 44 |         expect(await myAccountPage.isMyAccountPageExists(), 'Login with the new account should succeed').toBeTruthy();
+         |                                                                                                          ^
+      45 |     });
+      46 |
+      47 |     const productPage = await test.step('4) Search for the product and add it to the cart', async () => {
+        at C:\src\playwright_fr\tests\web\end-to-end-shopping.spec.ts:44:106
+        at C:\src\playwright_fr\tests\web\end-to-end-shopping.spec.ts:40:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\web-end-to-end-shopping-En-9630a-t-master-regression-web-e2e-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\web-end-to-end-shopping-En-9630a-t-master-regression-web-e2e-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\web-end-to-end-shopping-En-9630a-t-master-regression-web-e2e-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="web\login-data-driven.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="5" failures="2" skipped="0" time="16.735" errors="0">
+<testcase name="1 - Valid login (pavanol@xyz.com) @master @regression @web @datadriven" classname="web\login-data-driven.spec.ts" time="5.742">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="2 - Invalid login (abcxyz@xyz.com) @master @regression @web @datadriven" classname="web\login-data-driven.spec.ts" time="3.964">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="3 - Invalid login (blank email) @master @regression @web @datadriven" classname="web\login-data-driven.spec.ts" time="2.742">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="4 - Invalid login (abcxyz@xyz.com) @master @regression @web @datadriven" classname="web\login-data-driven.spec.ts" time="2.151">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\web-login-data-driven-4----ddc83-r-regression-web-datadriven-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\web-login-data-driven-4----ddc83-r-regression-web-datadriven-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\web-login-data-driven-4----ddc83-r-regression-web-datadriven-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="Login warning should be displayed" type="expect.toContain">
+<![CDATA[  [chromium] › web\login-data-driven.spec.ts:25:5 › 4 - Invalid login (abcxyz@xyz.com) @master @regression @web @datadriven › 3) Verify the expected result: failure 
+
+    Error: Login warning should be displayed
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Warning: No match for E-Mail Address and/or Password."
+    Received string:    "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+
+      38 |                 expect(await myAccountPage.isMyAccountPageExists(), 'My Account page should be displayed').toBeTruthy();
+      39 |             } else {
+    > 40 |                 expect(await loginPage.getWarningMessage(), 'Login warning should be displayed').toContain('Warning: No match for E-Mail Address and/or Password.');
+         |                                                                                                  ^
+      41 |             }
+      42 |         });
+      43 |
+        at C:\src\playwright_fr\tests\web\login-data-driven.spec.ts:40:98
+        at C:\src\playwright_fr\tests\web\login-data-driven.spec.ts:36:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\web-login-data-driven-4----ddc83-r-regression-web-datadriven-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\web-login-data-driven-4----ddc83-r-regression-web-datadriven-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\web-login-data-driven-4----ddc83-r-regression-web-datadriven-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="5 - Invalid login (blank email) @master @regression @web @datadriven" classname="web\login-data-driven.spec.ts" time="2.136">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\web-login-data-driven-5----7206f-r-regression-web-datadriven-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\web-login-data-driven-5----7206f-r-regression-web-datadriven-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\web-login-data-driven-5----7206f-r-regression-web-datadriven-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="Login warning should be displayed" type="expect.toContain">
+<![CDATA[  [chromium] › web\login-data-driven.spec.ts:25:5 › 5 - Invalid login (blank email) @master @regression @web @datadriven › 3) Verify the expected result: failure 
+
+    Error: Login warning should be displayed
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Warning: No match for E-Mail Address and/or Password."
+    Received string:    "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+
+      38 |                 expect(await myAccountPage.isMyAccountPageExists(), 'My Account page should be displayed').toBeTruthy();
+      39 |             } else {
+    > 40 |                 expect(await loginPage.getWarningMessage(), 'Login warning should be displayed').toContain('Warning: No match for E-Mail Address and/or Password.');
+         |                                                                                                  ^
+      41 |             }
+      42 |         });
+      43 |
+        at C:\src\playwright_fr\tests\web\login-data-driven.spec.ts:40:98
+        at C:\src\playwright_fr\tests\web\login-data-driven.spec.ts:36:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\web-login-data-driven-5----7206f-r-regression-web-datadriven-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\web-login-data-driven-5----7206f-r-regression-web-datadriven-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\web-login-data-driven-5----7206f-r-regression-web-datadriven-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="web\login.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="2" failures="0" skipped="0" time="11.226" errors="0">
+<testcase name="Valid login test @master @sanity @regression @web" classname="web\login.spec.ts" time="4.672">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="Invalid login test @master @regression @web" classname="web\login.spec.ts" time="6.554">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web\logout.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.567" errors="0">
+<testcase name="Logout test @master @sanity @regression @web" classname="web\logout.spec.ts" time="8.567">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web\product-search.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.009" errors="0">
+<testcase name="Product search test @master @sanity @regression @web" classname="web\product-search.spec.ts" time="2.009">
+<system-out>
+<![CDATA[✅ ✔️ Completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web\user-registration.spec.ts" timestamp="2026-11-17T13:59:15.355Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.311" errors="0">
+<testcase name="User registration test @master @sanity @regression @web" classname="web\user-registration.spec.ts" time="3.311">
 <system-out>
 <![CDATA[✅ ✔️ Completed successfully!
 ]]>

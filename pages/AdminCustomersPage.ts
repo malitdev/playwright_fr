@@ -26,7 +26,11 @@ export class AdminCustomersPage {
      */
     async searchByEmail(email: string): Promise<void> {
         await this.txtFilterEmail.fill(email);
-        await this.btnFilter.click();
+        // The filter reloads the list via ajax; wait for it before reading rows
+        await Promise.all([
+            this.page.waitForResponse(r => r.url().includes('customer.list')),
+            this.btnFilter.click(),
+        ]);
     }
 
     /**

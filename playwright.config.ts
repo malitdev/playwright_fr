@@ -6,6 +6,7 @@ export default defineConfig({
   fullyParallel: true,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
+  globalSetup:"./utils/globalSetup.ts",
   reporter: [
     ["list"], // Detailed console output
     //['line'],                         // One-line progress output

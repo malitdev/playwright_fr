@@ -32,3 +32,6 @@ node_modules/
 #  Others
 /prompts/
 /docs/
+
+# CI: downloaded OpenCart source
+/opencart-src/

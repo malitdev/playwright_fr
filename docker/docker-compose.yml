@@ -1,0 +1,24 @@
+# OpenCart + MariaDB for CI. OpenCart is served at http://localhost/opencart/upload/
+services:
+  db:
+    image: mariadb:10.11
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: openshop
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  web:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ../opencart-src/upload:/var/www/html/opencart/upload
+    depends_on:
+      db:
+        condition: service_healthy
